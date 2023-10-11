@@ -1,0 +1,203 @@
+/* ==============背景底圖============= */
+div.PopUp_main_block {
+  /* border: 1px solid #67f0ff; */
+  background-color: #1b1b1b;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/pic_bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/* 遮蓋黑色 */
+div.bgblack_cover {
+  width: 100%;
+  display: inline-flex;
+  /* border: 1px solid red; */
+  margin: 0px;
+  /* justify-content: center; */
+}
+
+@media (max-width: 853px) {
+  div.bgblack_cover {
+    display: block;
+    /* justify-content: flex-start; */
+  }
+
+}
+
+/* ===================中間左邊版面================== */
+
+/* 左邊黑底藍框 */
+.base_rectengle01 {
+  background-image: url(../images/pic_mouse_detail/pic_mouse_01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-style: solid;
+  border-color: #67f0ff;
+  border-width: 2px;
+  width: 60%;
+  height: 540px;
+  box-shadow: 0px 0px 24px 0px rgba(103, 240, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 40px 0 40px 40px;
+}
+
+@media (max-width: 853px) {}
+
+/* 左邊小圖 */
+.base_rectengle01 div img {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #67f0ff;
+  margin: 20px 0 0 20px;
+}
+
+.base_rectengle01 div {
+  /* border: 1px solid green; */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #67f0ff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  /* 添加光标指示小手样式，以提示可点击 */
+}
+
+.thumbnail:hover {
+  border: 1px solid white;
+  box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 1);
+  /* 悬停时修改边框颜色 */
+}
+
+@media (max-width: 853px) {
+  .base_rectengle01 {
+    width: 100%;
+    margin: 0px auto;
+  }
+
+}
+
+/* ===================中間右邊版面================== */
+div.base_rectengle01_right {
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  font-size: 0;
+  width: 40%;
+  height: 100%;
+  justify-content: flex-start;
+  margin: 40px;
+}
+
+@media (max-width: 853px) {
+  div.base_rectengle01_right {
+    width: 100%;
+    margin: 0px auto;
+    background-color: #1b1b1b;
+    border-style: solid;
+    border-color: #67f0ff;
+    border-width: 2px;
+    box-shadow: 0px 0px 24px 0px rgba(103, 240, 255, 1);
+  }
+}
+
+p.MD_text_title {
+  /* border: 1px solid pink; */
+  text-align: left;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+p.MD_text_title2 {
+  /* border: 1px solid pink; */
+  text-align: left;
+  font-size: 16px;
+  color: lightgray;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  line-height: 30px;
+  width: 100%;
+}
+
+
+
+/* 顏色 */
+p.Chose_color {
+  /* border: 1px solid blue; */
+  text-align: left;
+  font-size: 16px;
+  color: white;
+  margin: 5px 0;
+  display: flex;
+  width: 100%;
+}
+
+/* 選單 */
+select.custom_select {
+  font-size: 16px;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  /* margin: 0 0 10px 0; */
+}
+
+p.MD_price {
+  /* border: 1px solid red; */
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  margin: 20px 0 10px 0;
+}
+
+/* 加入購物車藍按鈕 */
+.product_btn {
+  /* border: 1px solid red; */
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: #67f0ff;
+  border: 0;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  padding: 15px 50px;
+  width: 200px;
+  text-align: center;
+}
+
+@media (max-width: 853px) {
+  .margin_block {
+    margin: 40px;
+  }
+}

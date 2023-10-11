@@ -1,0 +1,464 @@
+/* BANNE影片區 */
+div.banner_placeholder {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 630px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  font-size: 0;
+  background-color: black;
+}
+
+div.banner_placeholder::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsla(0, 0%, 0%, .5);
+}
+
+video#the_video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+@media (max-width: 1199.98px) {
+
+  div.banner_placeholder {
+    background-color: red;
+    margin: 0 0px -100px 0;
+  }
+
+  video#the_video {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 85%;
+  }
+
+}
+
+@media (max-width: 920px) {
+
+  div.banner_placeholder {
+    background-color: black;
+    margin: 0 0px -160px 0;
+  }
+
+  video#the_video {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 75%;
+  }
+
+}
+
+
+@media (max-width: 767.98px) {
+
+  div.banner_placeholder {
+    background-color: black;
+    margin: 0 0px -320px 0;
+  }
+
+  video#the_video {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 55%;
+  }
+}
+
+@media (max-width: 576px) {
+  div.banner_placeholder {
+    background-color: black;
+    margin: 0 0px -420px 0;
+    padding: 100px;
+  }
+
+  video#the_video {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 35%;
+  }
+}
+
+
+/* ===================三欄式區域================== */
+/* 標題副標題 */
+span.main_title_01A {
+  color: white;
+  /* border: 1px solid red; */
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin: 40px 0 10px 0;
+}
+
+span.main_title_01B {
+  color: white;
+  /* border: 1px solid red; */
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  margin: 0px 0 20px 0;
+}
+
+@media (max-width: 767.98px) {
+  span.main_title_01A {
+    font-size: 32px;
+  }
+
+  span.main_title_01B {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  span.main_title_01A {
+    font-size: 28px;
+  }
+
+  span.main_title_01B {
+    font-size: 12px;
+  }
+}
+
+/* 底圖部分 */
+div.main_block {
+  background-color: #1b1b1b;
+  width: 100%;
+  background-image: url(../images/pic_bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+div.inner_block {
+  /* border: 1px solid pink; */
+  /* width: 100%; */
+  font-size: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 滑鼠圖片 */
+div.img_block01 {
+  background-image: url(../images/pic_mainProduct.png);
+
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+div.img_block02 {
+  background-image: url(../images/pic_happyplayer.png);
+
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+div.img_block03 {
+  background-image: url(../images/pic_group_people.png);
+
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+
+
+/* ul裡面 */
+main.main ul.product_list {
+
+  display: flex;
+  gap: 20px;
+  margin: 20px 20px 20px 20px;
+}
+
+.product_list {
+  padding: 0;
+}
+
+/* Card藍框線黑底 */
+main.main ul.product_list li {
+  border: 2px solid #67f0ff;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #1b1b1b;
+  /* display: flex; */
+}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 920px) {
+  main.main ul.product_list {
+
+    display: block;
+    margin: 0;
+
+    width: 100%;
+  }
+
+  main.main ul.product_list li {
+    margin: 0 0 20px 0;
+  }
+}
+
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 576px) {}
+
+/* 標題 */
+p.title1 {
+  /* border: 1px solid red; */
+  color: white;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 副標題 */
+p.title2 {
+  color: #8D8D8D;
+  /* white-space: nowrap; */
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 8px 0px;
+}
+
+/* 價錢 */
+div.price_block {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px 0px;
+}
+
+
+
+
+/* test */
+.info-wrap {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 左資訊+右按鈕區 */
+
+.left_info {
+  margin: 16px 0px 16px 30px;
+}
+
+/* 加入購物車了解更多欄位 */
+.right_object {
+
+  /* border: 1px solid pink; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 30px 0 10px;
+  padding: 0px 0px;
+}
+
+button.product_btn a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* 了解更多 */
+.main_knowMore {
+  font-size: 14px;
+  color: #9AF5FF;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.right_object a {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px 0;
+  /* border: 1px solid greenyellow; */
+
+}
+
+/* 加入購物車藍按鈕 */
+a.main_blue_btn {
+  padding: 10px 20px;
+  margin: 0px 0 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #9AF5FF;
+  color: black;
+  font-weight: 900;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* ==================兩欄式區域=================== */
+
+
+/* 最底下底色 */
+div.two_AllMain_block {
+  width: 100%;
+  background-color: #67f0ff;
+  /* margin: 0; */
+  /* padding: 0; */
+  font-size: 0;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+/* ------單欄底圖----- */
+div.two_main_block {
+  border: 2px solid #67f0ff;
+  width: 50%;
+  height: 360px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/pic_homepage_01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  display: inline-block;
+}
+
+div.two_main_block_2 {
+  border: 2px solid #67f0ff;
+  width: 50%;
+
+  height: 360px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/pic_homepage_02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  display: inline-block;
+}
+
+div.two_main_block_3 {
+  border: 2px solid #67f0ff;
+  width: 50%;
+  height: 360px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/pic_homepage_05.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  display: inline-block;
+}
+
+div.two_main_block_4 {
+  border: 2px solid #67f0ff;
+  width: 50%;
+  height: 360px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/pic_homepage_04.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  display: inline-block;
+}
+
+
+@media (max-width: 767.98px) {
+
+  div.two_main_block,
+  div.two_main_block_2,
+  div.two_main_block_3,
+  div.two_main_block_4 {
+    width: 100%;
+
+    display: flex;
+  }
+}
+
+div.two_textArea {
+  /* border: 1px solid green; */
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, 0%);
+  margin: 0;
+  padding: 0;
+}
+
+p.two_textTitle {
+  /* border: 1px solid red; */
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  /* display: flex; */
+  text-align: center;
+}
+
+p.two_textTitleB {
+  font-size: 12px;
+  color: white;
+  margin: 6px 0 0 0;
+  text-align: center;
+}
+
+div.two_twoBtn {
+  /* border: 1px solid pink; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 10px 0px 0 0;
+}
+
+a.two_knowMore {
+  /* border: 1px solid black; */
+  font-size: 12px;
+  color: #67f0ff;
+  margin: 0 0px;
+  padding: 0 10px 0 0;
+  text-decoration: none;
+}
+
+a.two_buy {
+  /* border: 1px solid black; */
+  font-size: 12px;
+  color: #67f0ff;
+  margin: 0 0px;
+  padding: 0 0 0 0;
+  text-decoration: none;
+}

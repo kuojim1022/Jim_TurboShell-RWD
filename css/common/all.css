@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* 字體套用 */
+* {
+  font-family: 'Mooli', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+}

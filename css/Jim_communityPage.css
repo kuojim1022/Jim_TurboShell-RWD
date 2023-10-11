@@ -1,0 +1,348 @@
+/* 目錄黑底框 */
+div.menu_block {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
+  left: 0px;
+  top: 0px;
+  font-size: 0px;
+  margin: 0px 0px;
+}
+
+/* 文字框 */
+div.menu_textArea {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: inline-block;
+}
+
+/* 滑鼠標題 */
+p.menu_p_titleA {
+  display: block;
+  /* border: 1px solid green; */
+  font-size: 30px;
+  margin: 0;
+  color: #67f0ff;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 0px 0px 0px;
+}
+
+/* 副標題 */
+p.menu_p_titleB {
+  display: block;
+  /* border: 1px solid blue; */
+  font-size: 16px;
+  margin: 0;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 30px 30px 30px;
+  line-height: 30px;
+}
+
+/* 下方物件欄位 */
+/* 底框 */
+
+ul.menu_object {
+  display: flex;
+  border: 1px solid pink;
+  justify-content: space-between;
+  font-size: 0px;
+  padding: 0;
+
+}
+
+ul.menu_object li {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* 文字a標籤 */
+a.menu_object_01a {
+  text-decoration: none;
+}
+
+/* ================================下方ICON群組======================== */
+
+div.menu_object_01p {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  width: 70px;
+  height: 100%;
+  text-align: center;
+  border: 1px solid green;
+  /* margin: 0 10px; */
+}
+
+@media (max-width: 550px) {
+  ul.menu_object {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  ul.menu_object li {
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+  }
+}
+
+/* 圖片 */
+
+/* 臉書圖片 */
+div.pic_social {
+  background-image: url(../images/icon/icon_social_facebook.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* IG圖片 */
+div.pic_social_02 {
+  background-image: url(../images/icon/icon_social_instagram.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* X圖片 */
+div.pic_social_03 {
+  background-image: url(../images/icon/icon_social_X.png);
+  width: 100%;
+  height: 100%;
+  min-width: 50px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* TikTok圖片 */
+div.pic_social_04 {
+  background-image: url(../images/icon/icon_social_tiktok.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* YouTube圖片 */
+div.pic_social_05 {
+  background-image: url(../images/icon/icon_social_youtube.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* Discord圖片 */
+div.pic_social_06 {
+  background-image: url(../images/icon/icon_social_discord.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: inline-block;
+  justify-content: center;
+}
+
+.menu_object_01p:hover {
+  color: #67f0ff;
+}
+
+ul.menu_object li:hover {
+  transform: scale(1.1);
+}
+
+/* ------------------作品區域-------------- */
+
+/* 底圖部分 */
+div.main_block {
+  background-color: #1b1b1b;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/pic_bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -200px;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  z-index: 1;
+}
+
+
+
+/* ============分享以獲得獎勵============ */
+div.two_textArea {
+  /* border: 1px solid green; */
+  padding: 30px 30px 30px 30px;
+
+  display: block;
+  /* display: block; */
+}
+
+p.two_textTitle {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  margin: 0px 0 0 0;
+  text-align: center;
+}
+
+p.two_textTitleB {
+  font-size: 16px;
+  color: white;
+  margin: 6px 0 0 0;
+  text-align: center;
+  line-height: 30px;
+}
+
+div.two_twoBtn {
+  /* border: 1px solid red; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 10px 0px 0 0;
+}
+
+a.two_knowMore {
+  font-size: 16px;
+  color: #67f0ff;
+  margin: 0 0px;
+  padding: 0 10px 0 0;
+  text-decoration: none;
+  z-index: 3;
+}
+
+
+
+/* =====================三欄式區域===================== */
+.carousel {
+  width: 100%;
+  height: 400px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.carousel .container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  position: relative;
+  left: 0;
+
+  transition: left 1s;
+}
+
+.carousel .container img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  flex-shrink: 0;
+}
+
+.carousel .shift .btn {
+  background-color: black;
+  color: #67f0ff;
+
+  font-size: 40px;
+  font-weight: bold;
+
+  width: 50px;
+  height: 50px;
+
+  line-height: 50px;
+  text-align: center;
+
+  border-radius: 8px;
+  opacity: 0.5;
+
+  cursor: pointer;
+
+  position: absolute;
+
+  /* 垂直居中 */
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.carousel .shift .left {
+  left: 30px;
+}
+
+.carousel .shift .right {
+  right: 30px;
+}
+
+.carousel:hover .btn {
+  /* 悬浮时显示按钮 */
+  opacity: 1;
+}
+
+.carousel .bottom {
+  position: absolute;
+
+  bottom: 20px;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  width: max-content;
+
+  display: flex;
+  gap: 10px;
+}
+
+.carousel .bottom .indicator {
+  height: 5px;
+  width: 40px;
+  background-color: grey;
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+
+.carousel:hover .bottom .indicator {
+  /* 悬浮时显示按钮 */
+  opacity: 1;
+
+}
+
+.carousel .bottom .indicator.activate {
+  background-color: #67f0ff;
+}
+
+
+/* ==========================作品圖=========================== */

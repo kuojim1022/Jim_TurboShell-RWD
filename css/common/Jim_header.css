@@ -1,0 +1,347 @@
+/* 黑色全部底框 */
+header.header {
+  /* border: 1px solid blue; */
+  background: black;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 767.98px) {}
+
+/* 全部底框 */
+header.header div.block {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: 0;
+}
+
+header.header div.block nav.nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ========= logo區域 ========= */
+
+a.logo {
+  /* border: 1px solid red; */
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px;
+  margin: 0 0 0 120px;
+}
+
+/* @media (max-width: 1199.98px) {
+  a.logo {
+    margin: 0 0 0 60px;
+  }
+} */
+
+/* @media (max-width: 920px) {
+  a.logo {
+    margin: 0 0 0 60px;
+  }
+} */
+
+@media (max-width: 767.98px) {
+  a.logo {
+    margin: 0 0 0 30px;
+  }
+}
+
+a.logo img {
+  height: 60px;
+}
+
+a.logo img:hover {
+  transform: scale(1.2);
+}
+
+/* ========= 導覽列區域 ========= */
+
+/* 商店,生活產品,社群,支援 */
+header.header ul.nav_list {
+  /* border: 1px solid pink; */
+  display: inline-flex;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user_list-link {
+  transform: scale(1);
+}
+
+header.header ul.nav_list>li {
+  display: inline-block;
+  font-size: 16px;
+}
+
+header.header ul.nav_list>li a {
+  display: inline-block;
+  /* border: 1px solid green; */
+  text-decoration: none;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 60px;
+  color: grey;
+}
+
+@media (max-width: 1199.98px) {
+  header.header ul.nav_list>li a {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 920px) {
+  header.header ul.nav_list>li a {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header.header ul.nav_list>li a {
+    display: none;
+
+  }
+}
+
+
+/* -----------HOVER專區--------- */
+
+header.header ul.nav_list>li a.-on,
+header.header ul.nav_list>li a:hover {
+  color: #67f0ff;
+  transform: scale(1.2);
+}
+
+.nav_list li:hover {
+  color: #67f0ff;
+}
+
+.user_list-li a:hover {
+  color: #67f0ff;
+}
+
+a.user_list-link:hover {
+  transform: scale(1.05);
+  border: 2px solid #67f0ff;
+}
+
+.hamberger_new:hover {
+  transform: scale(1.2);
+}
+
+.icon_search:hover {
+  transform: scale(1.2);
+}
+
+.icon_shopping:hover {
+  transform: scale(1.2);
+}
+
+.icon_setting:hover {
+  transform: scale(1.2);
+}
+
+
+/* ========漢堡按鈕========== */
+
+div.icon_user {
+  z-index: 2;
+}
+
+header.header div.berger_block {
+  /* border: 1px solid blue; */
+  float: right;
+  margin: 0 120px 0 0px;
+  position: relative;
+  display: flex;
+  font-size: 0;
+  padding: 4px 0;
+
+}
+
+/* 三條線漢堡按鈕ICON */
+.hamberger_new {
+  /* border: 1px solid pink; */
+  padding: 5px -10px 5px 0px;
+}
+
+/* 搜尋ICON */
+.icon_search {
+  /* border: 1px solid pink; */
+  padding: 5px -10px 5px 0px;
+  display: inline-block;
+  margin: 0 0 0 10px;
+
+}
+
+/* 購物車按鈕 */
+.icon_shopping {
+  margin: 0 10px 0 0;
+  /* border: 1px solid red; */
+  display: inline-block;
+
+}
+
+/* 設定按鈕ICON */
+.icon_setting {
+  margin: 0;
+
+}
+
+
+@media (max-width: 767.98px) {
+  header.header div.berger_block {
+    margin: 0 30px 0 0px;
+  }
+}
+
+
+
+.icon_user::before {
+  content: "";
+  height: 20%;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  pointer-events: auto;
+
+}
+
+/* ---------下拉式選單整欄---------- */
+.user_list {
+  border: 1px solid #67f0ff;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  right: 0%;
+  top: 120%;
+  width: 80%;
+  opacity: 0;
+  transition: .5s;
+  display: none;
+  animation: fadeIn .8s;
+  /* 使用动画 fadeIn，2秒内变化 */
+}
+
+
+
+.user_list_2 {
+  border: 1px solid #67f0ff;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  right: 0%;
+  top: 120%;
+  width: 80%;
+  opacity: 0;
+  display: none;
+  animation: fadeIn .8s;
+  /* 使用动画 fadeIn，2秒内变化 */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    right: 0%;
+    /* 起始状态，完全透明 */
+
+  }
+
+  to {
+    opacity: 1;
+    right: 20%;
+    /* 终止状态，完全不透明 */
+  }
+}
+
+/* 點選按鈕的時候整籃從右到左移動過來 */
+#menu_control:checked~.icon_user .user_list {
+  right: 20%;
+  width: 80%;
+  opacity: 1;
+  display: block;
+}
+
+
+
+#menu_control {
+  display: none;
+}
+
+#menu_control_2:checked~.icon_user .user_list_2 {
+  right: 20%;
+  opacity: 1;
+  display: block;
+}
+
+#menu_control_2 {
+  display: none;
+}
+
+/* 下拉式選單單行 */
+.user_list li {
+  border: 1px solid #67f0ff;
+  font-size: 0px;
+}
+
+.user_list_2 li {
+  border: 1px solid #67f0ff;
+  font-size: 0px;
+}
+
+/* 行內內部元素 */
+.user_list>li a {
+  font-size: 16px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 0 0 0 10px;
+}
+
+.user_list_2>li a {
+  font-size: 16px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 0 0 0 10px;
+}
+
+
+/* -----------最左邊四顆按鈕的漢堡按鈕區域------------- */
+
+/* 左邊四顆按鈕的漢堡案牛平常隱藏起來 */
+.hamberger_new {
+  display: none;
+}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 920px) {}
+
+@media (max-width: 767.98px) {
+  .hamberger_new {
+    display: block;
+    margin: 0 0px 0 0;
+
+  }
+
+}

@@ -1,0 +1,396 @@
+/* 目錄黑底框 */
+div.menu_block {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
+  left: 0px;
+  top: 0px;
+  font-size: 0px;
+  margin: 0px 0px;
+}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 767.98px) {}
+
+/* 文字框 */
+div.menu_textArea {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: inline-block;
+}
+
+/* 滑鼠標題 */
+p.menu_p_titleA {
+  display: block;
+  /* border: 1px solid green; */
+  font-size: 30px;
+  margin: 0;
+  color: #67f0ff;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 0px 0px 0px;
+}
+
+/* 副標題 */
+p.menu_p_titleB {
+  display: block;
+  /* border: 1px solid blue; */
+  font-size: 16px;
+  margin: 0;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 30px 30px 30px;
+  line-height: 30px;
+}
+
+ul.menu_object {
+  display: flex;
+  /* border: 1px solid pink; */
+  justify-content: space-between;
+  font-size: 0px;
+  padding: 0;
+}
+
+
+
+
+ul.menu_object li {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* 文字a標籤 */
+a.menu_object_01a {
+  text-decoration: none;
+
+}
+
+
+/* ===================下方物件欄位 ===================*/
+div.menu_object_01p {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  width: 60px;
+  height: 100%;
+  text-align: center;
+  /* border: 1px solid red; */
+  margin: 0 10px;
+
+}
+
+@media (max-width: 500px) {
+  ul.menu_object {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+
+  ul.menu_object li {
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+  }
+}
+
+/* 圖片 */
+
+/* 衣服 */
+div.pic_social {
+  background-image: url(../images/icon/icons8-clothes.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* 外套 */
+div.pic_social_02 {
+  background-image: url(../images/icon/icons8-coat.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+/* 褲子 */
+div.pic_social_03 {
+  background-image: url(../images/icon/icons8-pants.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* 背包 */
+div.pic_social_04 {
+  background-image: url(../images/icon/icons8-backpack.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* 帽子 */
+div.pic_social_05 {
+  background-image: url(../images/icon/icons8-cap.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* 鞋子 */
+div.pic_social_06 {
+  background-image: url(../images/icon/icons8-shoe.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+.menu_object_01p div p {
+  margin: 30px 0 16px 0;
+  /* border: 1px solid green; */
+}
+
+
+
+/* 指到放大變色 */
+.menu_object_01p:hover {
+  color: #67f0ff;
+}
+
+ul.menu_object li:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+/* ===================九欄式區域================== */
+
+/* 底圖部分 */
+div.main_block {
+  min-height: calc(100vh - 60px - 200px - 94px);
+  background-color: #1b1b1b;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/pic_bg1B.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  padding: 20px 0px 20px 0px;
+  z-index: 1;
+}
+
+div.inner_block {
+  /* border: 1px solid blue; */
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0px;
+  padding: 0px 0;
+}
+
+
+/* ul裡面 */
+main.main ul.product_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  flex-wrap: wrap;
+  column-count: 3;
+  column-gap: 10px;
+}
+
+
+
+.img_block img {
+  width: 100%;
+}
+
+/* Card藍框線黑底 */
+main.main ul.product_list>li {
+  border: 2px solid #67f0ff;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #1b1b1b;
+  z-index: 3;
+  margin: 0px 0 10px 0;
+  width: 100%;
+  display: flex;
+}
+
+@media (max-width: 767.98px) {
+  .main {
+    /* border: 1px solid pink; */
+    display: flex;
+    justify-content: center;
+
+  }
+
+  main.main ul.product_list {
+
+    display: inline-flex;
+    width: 60%;
+    /* margin: 0px 120px; */
+    /* border: 1px solid green; */
+
+
+  }
+
+  main.main ul.product_list>li {
+
+    margin: 0px 0 10px 0;
+    width: 100%;
+    display: flex;
+
+  }
+}
+
+div.product_01_box {
+  display: inline-block;
+}
+
+
+
+/* 標題 */
+p.title1 {
+  /* border: 1px solid red; */
+  color: white;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 副標題 */
+p.title2 {
+  color: #8D8D8D;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 8px 0px;
+}
+
+/* 價錢 */
+div.price_block {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px 0px;
+}
+
+
+
+
+/* test */
+/* 卡片下方黑色底 */
+
+.info-wrap {
+  display: flex;
+  background-color: #1b1b1b;
+  justify-content: space-between;
+}
+
+/* 左資訊+右按鈕區 */
+
+.left_info {
+  /* border: 1px solid pink; */
+  margin: 10px;
+}
+
+
+
+
+
+/* 加入購物車了解更多欄位 */
+
+.right_object {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 了解更多 */
+.main_knowMore {
+  font-size: 14px;
+  color: #9AF5FF;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.right_object a {
+  text-decoration: none;
+}
+
+/* 加入購物車藍按鈕 */
+.product_btn {
+  /* border: 1px solid red; */
+  padding: 10px 20px;
+  margin: 0px 0 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #9AF5FF;
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  min-width: 120px;
+}
+
+@media (max-width: 767.98px) {
+  .product_btn {
+    min-width: 90px;
+  }
+}
+
+span.main_title_01A {
+  color: white;
+  /* border: 1px solid red; */
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin: 40px 0 10px 0;
+}
+
+span.main_title_01B {
+  color: white;
+  /* border: 1px solid red; */
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  margin: 0px 0 20px 0;
+}
